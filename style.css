@@ -1,0 +1,116 @@
+/* ================================
+   EdenBio — Global Styles (FULL)
+   ================================ */
+
+/* Reset & Base */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+:root{
+  --eden-green: #2e7d32;      /* CI green */
+  --text: #333;
+  --text-sub: #555;
+  --card: rgba(255,255,255,0.98);
+  --shadow: 0 6px 18px rgba(0,0,0,0.05);
+  --radius: 14px;
+}
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  color: var(--text);
+  line-height: 1.65;
+  background: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 40px 24px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Centered text block */
+.centered-text { text-align: center; color: #444; }
+.centered-text h1, .centered-text h2, .centered-text h3 { color: var(--eden-green); }
+.centered-text p { font-size: 18px; color: var(--text-sub); }
+
+/* Header */
+.site-header { background: #fff; border-bottom: 1px solid #eee; }
+.header-inner {
+  max-width: 1100px; margin: 0 auto;
+  padding: 22px 24px 14px; text-align: center;
+}
+.logo { height: 56px; width: auto; object-fit: contain; display: inline-block; }
+.logo-text { display: none; font-weight: 900; font-size: 26px; letter-spacing: .4px; }
+.tagline { display: block; margin-top: 8px; font-size: 14px; color: var(--eden-green); font-style: italic; }
+
+/* Navigation (white bar + green text) */
+nav.main-nav { background: #fff; border-bottom: 1px solid #eee; }
+nav.main-nav ul {
+  list-style: none; margin: 0; padding: 12px 0;
+  display: flex; justify-content: center; gap: 36px;
+}
+nav.main-nav a {
+  color: var(--eden-green); text-decoration: none; font-weight: 800;
+  padding: 6px 4px; border-radius: 6px; letter-spacing: .2px;
+}
+nav.main-nav a:hover { background: rgba(46,125,50,0.08); }
+nav.main-nav a.active { text-decoration: underline; text-underline-offset: 4px; }
+
+/* Home Hero (images/eden.png) */
+.hero {
+  text-align: center;
+  padding: 120px 24px;
+  color: #fff;
+  background: url("images/eden.png") no-repeat center center/cover;
+}
+.hero h1 {
+  font-size: clamp(34px, 6vw, 56px);
+  margin: 0 0 10px;
+  font-weight: 800;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.hero p {
+  margin: 0 0 18px;
+  font-size: clamp(16px, 2.5vw, 20px);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.35);
+}
+.hero .btn {
+  display: inline-block; background: var(--eden-green); color: #fff; text-decoration: none;
+  padding: 12px 20px; border-radius: 12px; font-weight: 800;
+  transition: transform .08s ease, filter .15s ease;
+}
+.hero .btn:hover { filter: brightness(0.96); transform: translateY(-1px); }
+
+/* Images & utility */
+img { max-width: 100%; height: auto; border-radius: 12px; }
+.center-img { display: block; margin: 20px auto; width: 100%; max-width: 800px; }
+.checklist { padding-left: 0; list-style: none; }
+.checklist li { position: relative; padding-left: 28px; margin: 10px 0; }
+.checklist li::before {
+  content: "✔"; position: absolute; left: 0; top: 0; line-height: 1;
+  color: var(--eden-green); font-weight: 800;
+}
+
+/* Product grid */
+.product-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); }
+.product-card { background:#fff; border-radius: var(--radius); box-shadow: 0 8px 20px rgba(0,0,0,0.06); padding: 18px; }
+.product-title { font-weight: 800; color: var(--eden-green); }
+.product-tag {
+  font-size: 12px; color:#5f7f62; background:#e8f4ea;
+  padding:4px 10px; border-radius: 999px; display: inline-block; margin-bottom: 6px;
+}
+
+/* Footer */
+footer { background: var(--eden-green); color: #fff; text-align: center; padding: 16px; margin-top: 24px; }
+
+/* Responsive */
+@media (max-width: 960px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) {
+  .container { padding: 28px 16px; margin: 16px auto; }
+  nav.main-nav ul { gap: 18px; }
+  .product-grid { grid-template-columns: 1fr; }
+  .hero { padding: 96px 18px; }
+}

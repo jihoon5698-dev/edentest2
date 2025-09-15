@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EdenBio — Interior</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Interior 전용 스타일 */
+    .gallery {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .gallery figure {
+      margin: 0;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+      overflow: hidden;
+      transition: transform .15s ease;
+    }
+    .gallery figure:hover { transform: translateY(-3px); }
+    .gallery img { width: 100%; height: auto; display: block; }
+    .gallery figcaption {
+      padding: 10px 12px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="images/edenbio_logo.jpg" alt="EdenBio Logo" class="logo" />
+      <span class="tagline">100% Natural Materials</span>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a class="active" href="interior.html">Interior</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <main class="container centered-text">
+    <h1>Interior Gallery</h1>
+    <p>Discover how EdenBio wallcoverings transform real spaces.</p>
+
+    <div class="gallery">
+      <figure>
+        <img src="images/interior/product_1.jpg" alt="Interior 1" />
+        <figcaption>Interior 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_2.jpg" alt="Interior 2" />
+        <figcaption>Interior 2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_3.jpg" alt="Interior 3" />
+        <figcaption>Interior 3</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_4.jpg" alt="Interior 4" />
+        <figcaption>Interior 4</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_5.jpg" alt="Interior 5" />
+        <figcaption>Interior 5</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_6.jpg" alt="Interior 6" />
+        <figcaption>Interior 6</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_7.jpg" alt="Interior 7" />
+        <figcaption>Interior 7</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_8.jpg" alt="Interior 8" />
+        <figcaption>Interior 8</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_9.jpg" alt="Interior 9" />
+        <figcaption>Interior 9</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_10.jpg" alt="Interior 10" />
+        <figcaption>Interior 10</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_11.jpg" alt="Interior 11" />
+        <figcaption>Interior 11</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_12.jpg" alt="Interior 12" />
+        <figcaption>Interior 12</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_13.jpg" alt="Interior 13" />
+        <figcaption>Interior 13</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_14.jpg" alt="Interior 14" />
+        <figcaption>Interior 14</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_15.jpg" alt="Interior 15" />
+        <figcaption>Interior 15</figcaption>
+      </figure>
+      <figure>
+        <img src="images/interior/product_16.jpg" alt="Interior 16" />
+        <figcaption>Interior 16</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EdenBio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
